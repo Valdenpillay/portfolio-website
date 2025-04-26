@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css?v=2">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personsal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e10ca1fc03.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="web_images/Logo.png" class="Logo">
+            
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#projects" onclick="closemenu()">My Work</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" id="close-icon" onclick="closemenu()"></i> 
+                </ul>
+            
+                <i class="fa-solid fa-bars" id="menu-icon" onclick="openmenu()"></i> 
+            </nav>
+            <div class="header-text">
+                <h1>Hi there,<br>welcome to my portfolio website.</h1>
+            </div>
+        </div>
+    </div>  
+    <!--------------------ABOUT--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-text">
+                         As a highly talented and motivated Electronic Engineering graduate with 19 
+                         distinctions, seeking a junior role to kickstart my career. With an aim to
+                         leverage the technical skills and knowledge gained throughout the academic
+                         journey in an innovative working environment. Accompanied by a solid
+                         foundation in electronic engineering and proven academic excellence with 
+                         confidence in the ability to contribute effectively within the field. Refer to the links below.</p>
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Instrumentation and Control</span><br>Automated manufacturing machinery, PLC configuration.</li>
+                                <li><span>Printed Circuit Board (PCB) Design and troubleshooting</span><br>NI Multisim, Ulti board, KiCad.</li>
+                                <li><span>Programming Languages</span><br>Python, MATLAB, Embedded Systems C/C++ (STM32,  Arduino,  ESP32).</li>
+                                <li><span>Applied Mathematics</span><br>Digital Signal Processing, Digital Image Processing, Statistics and Data Analysis.</li>
+                                <li><span>Microsoft Suite</span><br>Word, Excel, PowerPoint, Outlook.</li>
+                                <li><span>RF engineering</span><br>VHF/UHF systems, Impedance Matching, Amplifier Design (AWR for simulation).</li>
+                                <li><span>Electrical and Electro-mechanical Principles/Renewable Energy systems</span><br>Sensors, Actuators, PV panels, Inverters and Battery banks.</li>
+                                <li><span>Other</span><br>Proficient Driver (Code 10-Manual/Own vehicle, able to commute to work consistently).</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023 - 2024</span><br>Mechatronic Technician at The BnV Emb Co.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020 - 2024</span><br>BEngTech Electronic Engineering at the Durban University of Technology.</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+<!------------------Projects---------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1> 
+        <div class="work-list">
+            <div>
+            <i class="fa-solid fa-industry"></i>
+            <h2>Instrumentation and Control</h2>
+            <p>Process control systems and PLC configuration to implement automation using sensors and actuators. 
+               Applications within the FMCG and Automated manufacturing industry, Oil and Gas, and Wastewater.</p>
+               <a href="instrumentation.html"><span class="underline-text">See Work<i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code-branch"></i>
+                <h2>PCB Design and troubleshooting</h2>
+                <p>Design of Printed Circuitry Boards to perform specified tasks using NI Multisim for circuit
+                   simulation and NI Ultiboard or KiCad for the design. Gerber-files for routing or acid-etching
+                   process, followed by drilling for THT components, Soldering and finally testing.</p>
+                   <a href="pcbDesign.html"><span class="underline-text">See Work<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>Electronic Projects</h2>
+                    <p>Electronic projects from Embedded systems (C/C++) using the MCU's such as Arduino, ESP32 for IoT applications
+                       or using the STM32 family of chips (Bare-Metal: From the chip up) and creating firmware adhering to
+                       design rules (Heat transfer, EMI) and use of communication protocols (I2C, SPI, USART and CAN.) for
+                       development to Medical Image Processing</p>
+                       <a href="electronicProjects.html"><span class="underline-text">See Work<i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+        </div>
+    </div>
+</div>
+<!------------------Contact---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>valdenpillay41@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>081 594 7864</p>
+                <a href="web_images/CV.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    for (let i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove("active-link");
+    }
+    for (let i = 0; i < tabcontents.length; i++) {
+      tabcontents[i].classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+    <script>
+    var sidemenu = document.getElementById("sidemenu");
+    var menuIcon = document.getElementById("menu-icon");
+    var closeIcon = document.getElementById("close-icon");
+
+    function openmenu() {
+        if (window.innerWidth <= 600) {
+            sidemenu.style.right = "0";
+            menuIcon.style.display = "none";
+            closeIcon.style.display = "block";
+        }
+    }
+
+    function closemenu() {
+        if (window.innerWidth <= 600) {
+            sidemenu.style.right = "-200px";
+            menuIcon.style.display = "block";
+            closeIcon.style.display = "none";
+        }
+    }
+
+    // Ensure correct icon display on window resize
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 600) {
+            sidemenu.style.right = "0";
+            menuIcon.style.display = "none";
+            closeIcon.style.display = "none";
+        } else {
+            sidemenu.style.right = "-200px";
+            menuIcon.style.display = "block";
+            closeIcon.style.display = "none";
+        }
+    });
+
+    // Trigger resize check once on page load
+    window.dispatchEvent(new Event('resize'));
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzdFGzXRJTL71HUeXvmRISb7yByOE-QgpVHMLBI4WVKxp3X5pyU_Jw3xLZmV886iUuUfA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+
+    </script>
+</body>
+</html>
+
