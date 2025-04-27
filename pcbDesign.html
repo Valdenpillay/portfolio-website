@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCB Design and Troubleshooting</title>
+    <link rel="stylesheet" href="project2.css">
+</head>
+<body>
+    <div id="main-wrapper">
+
+        <!-- Project 1 -->
+        <div class="project-box">
+            <h1 class="project-title">Radio Frequency Low Noise Amplifier</h1>
+            <p>
+                The RF LNA designed and simulated in the AWR environment specifically designed for maximum gain.
+                The design frequency of the amplifier was at 254MHz with specifications including a minimum gain
+                of 22dB. The active device used was the BFP420F biased at VCE = 2.5V and Ic = 8mA. The rollet 
+                stability factor (k) had to be greater than 1 to stabilize the device at the design frequency.
+                The L-matching networks was configured to the design frequency at the input and output of the 
+                amplifier to ensure maximum power transfer at the characteristic impedance of 50 Ohms. The PCB 
+                include all SMD devices except the inductors which were tuned accordingly and via stitching to
+                improve signal integrity and noise reduction allowing for shorter return paths as this was a 
+                high frequency circuit. The circuit was tested using the Vector Network Analyser (VNA).
+            </p>
+            <img src="PCB/20241118_085035.jpg" alt="LNA Setup" class="main-image">
+            <img src="PCB/20241119_101157.jpg" alt="LNA Results" class="main-image">
+            <img src="PCB/Screenshot (89).png" alt="LNA Results" class="main-image">
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-box">
+            <h1 class="project-title">Flame and Temperature Sensor module</h1>
+            <p>
+                The Flame and Temperature sensor module was designed to measure the surrounding temperature as 
+                well as to detect the presence of a flame. For temperature sensing a simple thermistor was used
+                and the IR flame sensor to detect the presence of the flame. The microcontroller used was the 
+                ATMega328P assembled on a break-out board to display temperature readings and the flame sensor 
+                state on a 16x2 LCD.
+            </p>
+            <img src="PCB/FLAME_LO.PNG" alt="Flame Design" class="main-image">
+            <img src="PCB/3d.PNG" alt="Flame setup" class="main-image">
+            <img src="PCB/20211222_144427.jpg" alt="Flame Results" class="main-image">
+            <img src="PCB/20211219_204341.jpg" alt="Flame Final" class="main-image">
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-box">
+            <h1 class="project-title">Light Sensor Circuit</h1>
+            <p>
+                The Light Sensor Cicuit was constructed using the 555 Timer IC to detect the presence of
+                light using an LDR and a transistor to switch the speaker on. The sensitivity of the circuit 
+                could be varied using a potentiometer to adjust photon impact on the LDR to switch the speaker
+                on at different light levels.
+
+            </p>
+            <img src="PCB/20210603_195834.jpg" alt="LDR Setup" class="main-image">
+            <img src="PCB/20210602_100934.jpg" alt="LDR Results" class="main-image">
+        </div>
+        
+        <div class="project-box">
+            <h1 class="project-title">LED 8x8 Matrix</h1>
+            <p>
+                The LED 8x8 matrix consists of a total of 64 LEDs based on 8 rows and 8 columns which were
+                connected to the digital ports of the microcontroller. The pins can be correctly sinked and 
+                sourced to switch any LED or multiple LEDs on or off to create distinct patterns. The KiCad 
+                software was used in the design of this circuit.
+            </p>
+            <img src="PCB/ledmatrix_schem.PNG" alt="LED Schematic" class="main-image">
+            <img src="PCB/ledmatrix_cad.PNG" alt="led cad" class="main-image">
+            <img src="PCB/LED_matrix_3d.PNG" alt="led 3d" class="main-image">
+            <img src="PCB/20211128_103140.jpg" alt="led smiley" class="main-image">
+            <img src="PCB/20211128_103113.jpg" alt="led sad" class="main-image">
+        </div>
+
+        <div class="project-box">
+            <h1 class="project-title">AC/DC Power Supply</h1>
+            <p>
+                The AC/DC Power Supply was designed to produce a variable DC voltage from the AC mains supply. 
+                The circuit was designed using NI Multisim and NI Ultiboard and then placed into a housing with
+                a toggle switch, an LED, a potentiometer and an analog voltage meter. A prototype was constructed
+                and tested to read output values of the circuit. The final product was constructed and produced an
+                accurate reading related to the protoype results. The power supply did not make use of a transformer
+                which reduced circuit costs. A fuse was calculated and added to protect the downstream circuitry.
+            </p>
+            <img src="PCB/DCPSU_LO.PNG" alt="DC design" class="main-image">
+            <img src="PCB/DCPSU_3D.PNG" alt="DC 3d" class="main-image">
+            <img src="PCB/Proto.jpg" alt="DC proto" class="main-image">
+            <img src="PCB/Min.jpg" alt="DC 3d" class="main-image">
+            <img src="PCB/Max.jpg" alt="DC 3d" class="main-image">
+            <img src="PCB/Minfinal.jpg" alt="DC 3d" class="main-image">
+            <img src="PCB/Maxfinal.jpg" alt="DC 3d" class="main-image">
+        </div>
+
+        <div class="project-box">
+            <h1 class="project-title">Embroidery Machine Switching Power Supply</h1>
+            <p>
+                The Cosel LEB225F-2405 switching power supply unit is a precise power supply unit producing an average 
+                power output of 225W. It consists of multiple 24V outputs to run the internal fan as the unit is
+                convection cooled. The 24V outputs also run the X-axis stepper motor, the Y-axis stepper motor and the 
+                sewing motor which is a 24V AC servo motor where the switching is required. The 5V output is used to 
+                power the processor which stores the digital designs and contains the machine user controls such as 
+                memory reading/deletion, design programming, stop and start controls.
+            </p>
+            <img src="PCB/20241210_162405.jpg" alt="SPSU" class="main-image">
+        </div> 
+
+        <div class="project-box">
+            <h1 class="project-title">Audio Amplifier Design</h1>
+            <p>
+                The Audio Amplifier was designed in the NI Multisim and NI Ultiboard environment with minimal board 
+                space to work with. The audio amplifier has multiple amplification stages to maximise gain of the 
+                input signal. A double sided PCB was constructed with minimum vias to improve signal integrity.
+            </p>
+            <img src="PCB/AUDIOamp_LO.PNG" alt="AA LO" class="main-image">
+            <img src="PCB/AUDIOamp_3D.PNG" alt="AA 3D" class="main-image">
+        </div> 
+
+        <div class="project-box">
+            <h1 class="project-title">Motor Driver Circuit</h1>
+            <p>
+                The Motor Driver circuit was designed to ease the implementation in the revolution counter project
+                which used the LN293D IC. The IC uses the PWM signal to vary motor speed and an embedded H-Bridge 
+                circuit to control the direction of rotation of the motor. The IC was used to control two motors 
+                simultaneously which was efficient to carry out the control aspect of the project. The simple 
+                design of the board had also improved troubleshooting if problems occured due to the pin labelling.
+            </p>
+            <img src="PCB/MOTOR_DRIVER.PNG" alt="Driver LO" class="main-image">
+            <img src="PCB/MOTOR_DRIVER_3D.PNG" alt="Driver 3D" class="main-image">
+        </div> 
+
+        <div class="project-box">
+            <h1 class="project-title">Resonant Band Pass Filter</h1>
+            <p>
+                The Resonant Band Pass Filter was a simple PCB Design to filter out unwanted signals that did
+                not fall within the relevant band. A single-sided PCB had to be designed for this application.
+            </p>
+            <img src="PCB/RES_BPF_LO.PNG" alt="BPF LO" class="main-image">
+            <img src="PCB/RES_BPF_3D.PNG" alt="BPF 3D" class="main-image">
+        </div> 
+
+        <div class="project-box">
+            <h1 class="project-title">STM32LO53R8 Break-out board</h1>
+            <p>
+                The STM32 Break-out board was designed in KiCad and a power supply IC was used to power the 
+                STM32 chip. A type-B usb port had been configured to ease programming purposes to make the ST-Link 
+                debugger redundant. This forms the basis of embedded systems as the board can be further devloped to 
+                include more GPIO ports, Alternate function ports and Analog functions. Further embedded sytem 
+                projects are illustrated in the electronic projects section of the website.
+            </p>
+            <img src="PCB/STM32_LO.PNG" alt="STM32 LO" class="main-image">
+            <img src="PCB/STM32_3D.PNG" alt="STM32 3D" class="main-image">
+        </div> 
+        
+    </div>
+</body>
+</html>
