@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+/* Main Wrapper */
+#main-wrapper {
+    background-image: url('web_images/Graphic2.PNG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+}
+
+/* Individual Project Boxes */
+.project-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Project Title */
+.project-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Paragraph */
+.project-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.main-image {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    max-height: 400px; /* Adjust this value as needed */
+    height: auto;
+    object-fit: contain; /* Ensures the image scales without distortion */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+@media only screen and (max-width: 600px) {
+    .project-box p {
+        text-align: left;
+    }
+
+    #main-wrapper {
+        padding-bottom: 140px; /* Add extra space at the bottom */
+    }
+}
