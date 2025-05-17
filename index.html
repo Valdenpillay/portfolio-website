@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css?v=2">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personsal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e10ca1fc03.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="web_images/Logo.png" class="Logo">
+            
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#projects" onclick="closemenu()">My Work</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" id="close-icon" onclick="closemenu()"></i> 
+                </ul>
+            
+                <i class="fa-solid fa-bars" id="menu-icon" onclick="openmenu()"></i> 
+            </nav>
+            <div class="header-text">
+                <h1>Hi there,<br>welcome to my portfolio website.</h1>
+            </div>
+        </div>
+    </div>  
+    <!--------------------ABOUT--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-text">
+                         Driven and accomplished Electronic Engineer with 19 distinctions, eager to launch my career
+                         in a dynamic, innovative environment. Backed by a strong foundation in mechatronics and 
+                         electronics, I’m ready to apply my skills and academic excellence to make a meaningful impact. 
+                         Refer to the links below.</p>
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Instrumentation and Control</span><br>Automated manufacturing machinery, PLC configuration.</li>
+                                <li><span>Printed Circuit Board (PCB) Design and troubleshooting</span><br>NI Multisim, Ulti board, KiCad.</li>
+                                <li><span>Programming Languages</span><br>Python, MATLAB, Embedded Systems C/C++ (STM32,  Arduino,  ESP32).</li>
+                                <li><span>Applied Mathematics</span><br>Digital Signal Processing, Digital Image Processing, Statistics and Data Analysis.</li>
+                                <li><span>Microsoft Suite</span><br>Word, Excel, PowerPoint, Outlook.</li>
+                                <li><span>RF engineering</span><br>VHF/UHF systems, Impedance Matching, Amplifier Design (AWR for simulation).</li>
+                                <li><span>Electrical and Electro-mechanical Principles/Renewable Energy systems</span><br>Sensors, Actuators, PV panels, Inverters and Battery banks.</li>
+                                <li><span>Other</span><br>Proficient Driver (Code 10-Manual/Own vehicle, able to commute to work consistently).</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li>
+                                    <span>The BnV Emb Co. (Mechatronic Technician)<br class="preserve-br">01/2022 - 12/2024</span><br class="preserve-br">
+                                    Reference: Nithia<br class="preserve-br">Contact: dontpillay@gmail.com - 079 413 5651
+
+                                </li><br>
+                                <div class="experience-text"></div>
+                                <li>Built and maintained CNC machinery, motor drives, electronic sensor circuitry<br>and Power Supply 
+                                    Units. Successfully re-built an additional machine worth<br>R225,000.00, boosting daily output by 50%.</li>
+                                <li>Analyzed and repaired electro-mechanical control systems with the aid of schematics,<br>reducing 
+                                    downtime by 30% and enhancing the ability to maintain complex systems<br>with an extreme level of attention to detail.</li>
+                                <li>Managed stock control and built strong yet humble client relationships, extending<br>my network while improving 
+                                    communication and sales services. Gained essential<br>skills to work well in a team within an industrial environment.</li>
+                                <li>Led and trained a team to program and operate the Industrial Tajima 3-axis CNC<br>embroidery machine. 
+                                    Handled multiple high-stake projects for ENGEN and many<br>more large corporations with determination and grit.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020 - 2024</span><br>BEngTech Electronic Engineering at the Durban University of Technology.</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+<!------------------Projects---------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1> 
+        <div class="work-list">
+            <div>
+                <i class="fa-solid fa-code-branch"></i>
+                <h2>PCB Design and troubleshooting</h2>
+                <p>Design of task-specific printed circuit boards using NI Multisim for circuit simulation and NI Ultiboard or KiCad for layout. 
+                   Generation of Gerber files for routing or acid-etching, followed by drilling for through-hole components, soldering, and 
+                   final testing to validate functionality and ensure performance standards are met.</p>
+                   <a href="pcbDesign.html"><span class="underline-text">See Work<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>Electronic Projects</h2>
+                    <p>Development of embedded systems using C/C++ on microcontrollers such as Arduino, ESP32 (IoT), and STM32 (bare-metal). 
+                        Projects involve firmware design aligned with industry standards, addressing heat dissipation, EMI, and hardware constraints, 
+                        while implementing protocols like I2C, SPI, USART, and CAN. Technical scope extends to advanced applications such as medical image processing.</p>
+                       <a href="electronicProjects.html"><span class="underline-text">See Work<i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                <div>
+            <i class="fa-solid fa-industry"></i>
+            <h2>Instrumentation and Control</h2>
+            <p>Design and configuration of process control systems and PLCs to enable automation through the integration of sensors and actuators. 
+                These systems are applied across various sectors, including FMCG, automated manufacturing, oil and gas, and wastewater treatment by 
+                improving efficiency, precision, and operational reliability.</p>
+               <a href="instrumentation.html"><span class="underline-text">See Work<i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crown"></i>
+                <h2>The BnV Emb Co.</h2>
+                <p>Beyond the technical work at The BnV Emb Co., what I bring to the table is showcased here. A track record 
+                   of bold innovation, client satisfaction, and real results. I have worked with leading clients, delivered 
+                   outcomes that exceeded expectations, and made waves in the industry as a driven and capable young professional. 
+                   I am ready to bring that same energy and impact to your team, to contribute, grow, and help push your vision forward.</p>
+                   <a href="BnV.html"><span class="underline-text">See Work<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div>
+                <i class="fa-solid fa-clock"></i>
+                <h2>Hobbies</h2>
+                <p>Engineering is not just my career, it is how I live. Off the clock, I channel my passion into building and innovating, 
+                    especially in smart systems and automotive restoration. One standout project is my fully customized 1989 Toyota Corolla, 
+                    transformed from the ground up. From spray-painting and panel-beating to engine upgrades, I have turned it into a modern classic, 
+                    a head-turning icon recognized on South African roads. This is not just a hobby, it is where skill meets creativity.
+                </p>
+                   <a href="Hobbies.html"><span class="underline-text">See Work<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+        </div>
+    </div>
+</div>
+<!------------------Contact---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>valdenpillay41@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>081 594 7864</p>
+                <a href="web_images/certifications.pdf" download class="btn">Download Certifications</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    for (let i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove("active-link");
+    }
+    for (let i = 0; i < tabcontents.length; i++) {
+      tabcontents[i].classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+    <script>
+    var sidemenu = document.getElementById("sidemenu");
+    var menuIcon = document.getElementById("menu-icon");
+    var closeIcon = document.getElementById("close-icon");
+
+    function openmenu() {
+        if (window.innerWidth <= 600) {
+            sidemenu.style.right = "0";
+            menuIcon.style.display = "none";
+            closeIcon.style.display = "block";
+        }
+    }
+
+    function closemenu() {
+        if (window.innerWidth <= 600) {
+            sidemenu.style.right = "-200px";
+            menuIcon.style.display = "block";
+            closeIcon.style.display = "none";
+        }
+    }
+
+    // Ensure correct icon display on window resize
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 600) {
+            sidemenu.style.right = "0";
+            menuIcon.style.display = "none";
+            closeIcon.style.display = "none";
+        } else {
+            sidemenu.style.right = "-200px";
+            menuIcon.style.display = "block";
+            closeIcon.style.display = "none";
+        }
+    });
+
+    // Trigger resize check once on page load
+    window.dispatchEvent(new Event('resize'));
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzdFGzXRJTL71HUeXvmRISb7yByOE-QgpVHMLBI4WVKxp3X5pyU_Jw3xLZmV886iUuUfA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+
+    </script>
+</body>
+</html>
+
