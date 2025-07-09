@@ -15,7 +15,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(web_images/Graphic2.PNG);
+    background-image: url(web_images/Graphic2.webp);
     background-size: cover;
     background-position: center;
 }
@@ -70,7 +70,7 @@ nav ul li a:hover::after{
 /*-------------------ABOUT---------------------*/
 #about{
     width: 100%;
-    background-image: url(web2/About1.png);
+    background-image: url(web2/About1.webp);
     background-size: cover;
     background-position: center;
     padding: 10px 0%;
@@ -155,7 +155,7 @@ nav ul li a:hover::after{
 /*---------------------Projects---------------*/
 
 #projects{
-    background-image: url(web_images/Graphic2.PNG);
+    background-image: url(web_images/Graphic2.webp);
     background-size: cover;
     background-position: center;
 }
@@ -211,7 +211,7 @@ nav ul li a:hover::after{
 /*-------------contact-------------*/
 #contact{
     width: 100%;
-    background-image: url(web_images/Graphic2.PNG);
+    background-image: url(web_images/Graphic2.webp);
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -280,7 +280,7 @@ form .btn{
 }
 @media only screen and (max-width: 600px){
     #header {
-        background-image: url(web2/responsivehome.PNG);
+        background-image: url(web2/responsivehome.webp);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -337,7 +337,7 @@ form .btn{
         text-align: center;
     }
     #about {
-        background-image: url(web_images/Graphic8.png); 
+        background-image: url(web_images/Graphic8.webp); 
 
     }
     #about::before {
